@@ -32,7 +32,11 @@ box.forEach((element) => {
 
 //if the turn is X then the next turn will be O;
 function turnOver() {
-  turn = turn === "X" ? "O" : "X";
+  if (turn === "X") {
+    turn = "O";
+  } else {
+    turn = "X";
+  }
 }
 
 //win function
