@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  position: relative;
+}
+
+.main {
+  background-color: blue;
+  height: 700px;
+  width: 500px;
+  position: relative;
+  top: 10%;
+  left: 52%;
+  transform: translate(-50%, 5%);
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.main span {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Finger Paint", cursive;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 15px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  /*background-color: yellow;*/
+  height: 450px;
+  width: 450px;
+  display: grid;
+  position: absolute;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid yellow;
+  color: yellow;
+  font-size: 120px;
+  font-family: "Finger Paint", cursive;
+  &:hover {
+    background-color: rgb(165, 243, 237);
+  }
+}
+
+.bt {
+  border-top: 0px;
+}
+
+.bb {
+  border-bottom: 0px;
+}
+
+.bl {
+  border-left: 0px;
+}
+
+.br {
+  border-right: 0px;
+}
+
+#restart {
+  height: 50px;
+  width: 130px;
+  position: absolute;
+  top: 90%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Finger Paint", cursive;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  transition: ease-in-out all 0.1s;
+  transform: scale(1);
+
+  &:hover {
+    background-color: green;
+    transform: scale(1.1);
+  }
+}
+
+span.scoreBoard {
+  /*background-color: red;*/
+  color: yellow;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-decoration-line: none;
+}
